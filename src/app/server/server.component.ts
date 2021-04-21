@@ -8,9 +8,14 @@ export class ServerComponent {
 
   serverId: number = 10;
   serverStatus: string = 'offline';
+  username: string = ''
 
   getServerStatus(){
     return this.serverStatus;
+  }
+
+  resetUsername(){
+    this.username ='';
   }
 
 }
